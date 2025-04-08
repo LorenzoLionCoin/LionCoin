@@ -42,23 +42,20 @@
       text-align: center;
     }
 
-    .side-code.left {
+    .side-code {
       position: absolute;
-      left: 0;
-      height: 100%;
       top: 0;
+      height: 100%;
       writing-mode: vertical-rl;
-      transform: rotate(180deg);
       text-align: center;
     }
 
+    .side-code.left {
+      left: 0;
+    }
+
     .side-code.right {
-      position: absolute;
       right: 0;
-      height: 100%;
-      top: 0;
-      writing-mode: vertical-rl;
-      text-align: center;
     }
 
     .container {
@@ -82,10 +79,6 @@
       margin-bottom: 30px;
     }
 
-    .qr-code {
-      margin: 20px 0;
-    }
-
     footer {
       margin-top: 40px;
       font-size: 0.9em;
@@ -95,9 +88,13 @@
 </head>
 <body>
   <div class="background-code">
-    <div class="code-line top-code">9f2a3c5b7e1d4f2a9c3e8a2b5d7c1f0e8a2d3f6b7e4c2a5d9f3b6e1c4a7</div>
-    <div class="code-line side-code left">7e1d4f2a9c3e8a2b5d7c1f0e8a2d3f6b7e4c2a5d9f3b6e1c4a79f2a3c5b</div>
+    <div class="code-line top-code">9f2a3c5b7e1d4f2a9c3e8a2b5d7c1f0e8a2d3f6b7e4c2a5d9f3b6e1c4a7f8b9c3d5e7f0a1b2c3d4e5f6</div>
+    <div class="code-line side-code left">7e1d4f2a9c3e8a2b5d7c1f0e8a2d3f6b7e4c2a5d9f3b6e1c4a79f2a3c5b7e1d4f2a9c3e8a2b5d7c1f0e</div>
+    <div class="code-line side-code left" style="left: 40px;">c2a5d9f3b6e1c4a79f2a3c5b7e1d4f2a9c3e8a2b5d7c1f0e8a2d3f6b7e4</div>
+    <div class="code-line side-code left" style="left: 80px;">b6e1c4a79f2a3c5b7e1d4f2a9c3e8a2b5d7c1f0e</div>
     <div class="code-line side-code right">a2d3f6b7e4c2a5d9f3b6e1c4a79f2a3c5b7e1d4f2a9c3e8a2b5d7c1f0e</div>
+    <div class="code-line side-code right" style="right: 40px;">f6b7e4c2a5d9f3b6e1c4a79f2a3c5b7e1d4f2a</div>
+    <div class="code-line side-code right" style="right: 80px;">9f2a3c5b7e1d4f2a9c3e8a2b</div>
   </div>
 
   <div class="container">
@@ -106,10 +103,14 @@
 
     <p>LionCoin is a mineable cryptocurrency created by Lorenzo Bryson. It's designed to be accessible, innovative, and empowering for anyone interested in crypto.</p>
 
-    <div class="qr-code">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://example.com/how-to-buy" alt="How to buy LionCoin QR Code">
-      <p>Scan this QR code to learn how to buy LionCoin!</p>
-    </div>
+    <h2>How to Install a Bitcoin Wallet</h2>
+    <ol style="text-align: left; max-width: 500px; margin: 0 auto;">
+      <li><strong>Choose a Wallet:</strong> For beginners, we recommend <a href="https://electrum.org" target="_blank" style="color: gold;">Electrum</a> or <a href="https://bitcoin.org/en/choose-your-wallet" target="_blank" style="color: gold;">Bitcoin Core</a>.</li>
+      <li><strong>Download & Install:</strong> Visit the wallet website and download the version for your computer (Windows, macOS, or Linux).</li>
+      <li><strong>Install the App:</strong> Follow the installation instructions. For macOS, drag the app into your Applications folder.</li>
+      <li><strong>Create a New Wallet:</strong> Open the wallet app and select "Create New Wallet." Follow the steps and write down your recovery phrase.</li>
+      <li><strong>Receive & Send Bitcoin:</strong> Use your wallet's “Receive” tab to get your wallet address. This is where you'll receive LionCoin if it runs on Bitcoin rails, or use for trading BTC with Lorenzo.</li>
+    </ol>
 
     <footer>
       <p>by Lorenzo Bryson</p>
