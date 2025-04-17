@@ -106,31 +106,12 @@
     <img src="lioncoin-logo.webp" alt="LionCoin Logo" class="logo" />
     <h1>Welcome to LionCoin</h1>
 
-    <p>LionCoin is a mineable cryptocurrency created by Lorenzo Bryson. It's designed to be accessible, innovative, and empowering for anyone interested in crypto.</p>
-
-    <h2>Buy LionCoin</h2>
+    <p>LionCoin is a cryptocurrency created and coded by Lorenzo Bryson. It's designed to be easy and quick to mine, meaning, transactions will only take a few minutes or less to process.</p>
+    <h2>COMING SOON</h2>
+    <h3>Buy LionCoin</h3>
     <p>
       Purchase 1 LionCoin for $1 using the secure payment link below:
     </p>
-
-    <h2>Check Your LionCoin Balance</h2>
-<input id="address" placeholder="Paste your LionCoin address" 
-  style="width: 80%; padding: 10px; font-size: 16px; border-radius: 8px;">
-<button onclick="checkBalance()">Check Balance</button>
-<p id="balance-result" style="margin-top: 10px;"></p>
-
-<script>
-  async function checkBalance() {
-    const address = document.getElementById('address').value;
-    const res = await fetch('balances.json');
-    const data = await res.json();
-    const balance = data[address];
-    const output = balance !== undefined 
-      ? `💰 Balance for ${address}: ${balance} LionCoin`
-      : `❌ Address not found.`;
-    document.getElementById('balance-result').innerText = output;
-  }
-</script>
 
     <p>
       <a href="https://buy.stripe.com/test_4gweVJ1cAeap8F2288" target="_blank" style="color: gold; font-weight: bold; text-decoration: underline;">
@@ -141,11 +122,10 @@
 
     <h2>How to Install a Bitcoin Wallet</h2>
     <ol style="text-align: left; max-width: 500px; margin: 0 auto;">
-      <li><strong>Choose a Wallet:</strong> For beginners, we recommend <a href="https://electrum.org" target="_blank" style="color: gold;">Electrum</a> or <a href="https://bitcoin.org/en/choose-your-wallet" target="_blank" style="color: gold;">Bitcoin Core</a>.</li>
-      <li><strong>Download & Install:</strong> Visit the wallet website and download the version for your computer (Windows, macOS, or Linux).</li>
-      <li><strong>Install the App:</strong> Follow the installation instructions. For macOS, drag the app into your Applications folder.</li>
-      <li><strong>Create a New Wallet:</strong> Open the wallet app and select "Create New Wallet." Follow the steps and write down your recovery phrase.</li>
-      <li><strong>Receive & Send Bitcoin:</strong> Use your wallet's “Receive” tab to get your wallet address. This is where you'll receive LionCoin if it runs on Bitcoin rails, or use for trading BTC with Lorenzo.</li>
+      <li><strong>Download the Wallet:</strong> COMING SOON</li>
+      <li><strong>Install the App:</strong> COMING SOON</li>
+      <li><strong>Create a New Personal Wallet:</strong> COMING SOON</li>
+      <li><strong>Receive & Send LionCoin:</strong> COMING SOON</li>
     </ol>
 
     <footer>
