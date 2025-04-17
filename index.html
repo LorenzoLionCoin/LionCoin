@@ -112,6 +112,25 @@
     <p>
       Purchase 10 LionCoin for $1 using the secure payment link below:
     </p>
+
+    <h2>Check Your LionCoin Balance</h2>
+<input id="address" placeholder="Paste your LionCoin address">
+<button onclick="checkBalance()">Check Balance</button>
+<p id="balance-result" style="margin-top: 10px;"></p>
+
+<script>
+  async function checkBalance() {
+    const address = document.getElementById('address').value;
+    const res = await fetch('balances.json');
+    const data = await res.json();
+    const balance = data[address];
+    const output = balance !== undefined 
+      ? `💰 Balance for ${address}: ${balance} LionCoin`
+      : `❌ Address not found.`;
+    document.getElementById('balance-result').innerText = output;
+  }
+</script>
+
     <p>
       <a href="https://buy.stripe.com/test_4gweVJ1cAeap8F2288" target="_blank" style="color: gold; font-weight: bold; text-decoration: underline;">
         👉 Buy LionCoin on Stripe
